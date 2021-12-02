@@ -1,16 +1,7 @@
 import React, {FC, ReactElement} from "react";
 import { Box, FormControl, InputLabel, OutlinedInput } from '@mui/material';
 
-type RecipeType = {
-    name: string,
-    timeToPrepare?: number,
-    ingredients: {
-        ingredient: string,
-        amount: string,
-        measurement: string
-    }[],
-    instructions: string[]
-}
+
 
 const RecipeForm = () => {
     const [name, setName] = React.useState('');
